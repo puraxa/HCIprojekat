@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="left">
+        <label for="">Odaberite tip terena: </label><br>
+        <select name="" id="">
+            <option value="">Trava</option>
+            <option value="">Sljaka</option>
+            <option value="">Beton</option>
+        </select><br>
+        <label for="">Odaberite tip podloge: </label><br>
+        <select name="" id="">
+            <option value="">Trava</option>
+            <option value="">Sljaka</option>
+            <option value="">Beton</option>
+        </select>
+        <br>
+        <label for="">Rezervišite opremu (opcionalno) : </label><br>
+        <input type="checkbox" name="" id="" value="Reket"> Reket <br>
+        <input type="checkbox" name="" id="" value="Reket"> Top za loptice <br>
+        <input type="checkbox" name="" id="" value="Reket"> Čunjevi <br>
+    </div>
+    <div class="right">
+        <div class="center">
+            <label for="">Odaberite datum: </label><br>
+            <input type="date"><br>
+        </div>
+        <div class="center center2">
+            <label for="">Odaberite termin: </label><br>
+            <div class="cont">
+                <div *ngFor="let termin of termini; let i = index" class="termin">
+                    <span>{{termin}}:00-{{termin+1 == 24 ? "00": termin+1}}:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

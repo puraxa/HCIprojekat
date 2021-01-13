@@ -1,0 +1,36 @@
+div.container {
+    position: relative;
+    width: 750px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #FF8351;
+}
+div.lijeva {
+    position: absolute;
+    left: 0;
+    width: 15px;
+    background-color: white;
+    height: 100%;
+}
+div.desna{
+    position: absolute;
+    right: 0;
+    width: 15px;
+    background-color: white;
+    height: 100%;
+}
+div.srednja{
+    position: absolute;
+    top:65%;
+    background-color: white;
+    height: 15px;
+    width: 100%;
+}
+div.vodoravna{
+    position: absolute;
+    left:50%;
+    background-color: white;
+    height: 65%;
+    width: 15px;
+    transform: translate(-50%);
+}
