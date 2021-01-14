@@ -8,6 +8,9 @@ import { TerenComponent } from './teren/teren.component';
 import { RezervacijaterminaComponent } from './rezervacijatermina/rezervacijatermina.component';
 import { LigaComponent } from './liga/liga.component';
 import { LigadetaljiComponent } from './ligadetalji/ligadetalji.component';
+import { ShopComponent } from './shop/shop.component';
+import { ClanarinaComponent } from './clanarina/clanarina.component';
+import { KontaktComponent } from './kontakt/kontakt.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { LigadetaljiComponent } from './ligadetalji/ligadetalji.component';
     TerenComponent,
     RezervacijaterminaComponent,
     LigaComponent,
-    LigadetaljiComponent
+    LigadetaljiComponent,
+    ShopComponent,
+    ClanarinaComponent,
+    KontaktComponent
   ],
   imports: [
     BrowserModule,

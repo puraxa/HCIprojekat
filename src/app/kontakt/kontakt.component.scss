@@ -1,0 +1,39 @@
+div.container{
+    padding: 10px;
+    height: 100%;
+}
+div.cont{
+    background-color: #fff;
+    height: 100%;
+    border-radius: 5px;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    padding: 25px;
+}
+div.item{
+    position: relative;
+    height: 70%;
+    padding: 25px;
+}
+label {
+    font-size: 24px;
+    font-weight: bold;
+}
+input[type="text"] {
+    height: 32px;
+    width: 100%;
+}
+div.item button {
+    padding: 10px 20px;
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+p {
+    font-size: 24px;
+    font-weight: bold;
+}

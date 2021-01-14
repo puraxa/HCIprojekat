@@ -1,0 +1,54 @@
+div.container{
+    display: grid;
+    padding: 10px;
+    height: 100%;
+}
+div.cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    "lijeva desna"
+    "nesto nesto";
+    justify-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px black;
+    
+}
+div.lijeva{
+    grid-area: lijeva;
+    justify-items: center;
+    align-items: center;
+    position:relative;
+}
+div.desna {
+    grid-area: desna;
+    justify-items: center;
+    align-items: center;
+    position:relative;
+}
+div.lijeva2 {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+}
+div.nesto {
+    grid-area: nesto;
+    justify-items: center;
+    align-items: center;
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+div.item{
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: #FF8351;
+    text-align: center;
+}
