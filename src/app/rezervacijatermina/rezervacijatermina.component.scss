@@ -58,3 +58,23 @@ div.termin{
     border: solid 1px black;
     font-size: 16px;
 }
+div.termin:hover{
+    cursor: default;
+}
+button {
+    position: relative;
+    left: 50%;
+    top:20px;
+    padding: 10px 20px;
+    width:200px;
+    transform: translate(-50%);
+}
+div.termin.tempRezervisan {
+    background-color: #FF8351;
+}
+div.termin.rezervisan {
+    background-color: red;
+}
+input[type="date"].error {
+    border: solid 1px red;
+}

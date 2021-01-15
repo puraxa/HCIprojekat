@@ -21,15 +21,16 @@
     <div class="right">
         <div class="center">
             <label for="">Odaberite datum: </label><br>
-            <input type="date"><br>
+            <input type="date"[(ngModel)]="date" [ngClass]="{'error':isDate()}"><br>
         </div>
         <div class="center center2">
             <label for="">Odaberite termin: </label><br>
             <div class="cont">
-                <div *ngFor="let termin of termini; let i = index" class="termin">
+                <div *ngFor="let termin of termini; let i = index" class="termin" (click)="dodajRezervisani(i)" [ngClass]="{'tempRezervisan': isTempRezervisan(i),'rezervisan': isRezervisan(i)}">
                     <span>{{termin}}:00-{{termin+1 == 24 ? "00": termin+1}}:00</span>
                 </div>
             </div>
+            <button (click)="rezervisi()">Rezerviši termin</button>
         </div>
     </div>
 </div>
