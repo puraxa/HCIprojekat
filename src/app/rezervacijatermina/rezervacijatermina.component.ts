@@ -40,7 +40,7 @@ export class RezervacijaterminaComponent implements OnInit {
       alert("Datum nije odabran");
       return;
     }
-    this.dateBool = true;
+    this.dateBool = false;
     for (let i = 0; i < this.tempRezervisani.length; i++) {
       const element = this.tempRezervisani[i];
       if(this.rezervisaniTermini.indexOf(element) < 0) this.rezervisaniTermini.push(element);
